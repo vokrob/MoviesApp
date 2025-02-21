@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.vokrob.moviesapp" />
+                  <option name="mobileSdkAppId" value="1:762132734995:android:0c3fa46f3a2860a7930be6" />
+                  <option name="projectId" value="moviesapp-cf157" />
+                  <option name="projectNumber" value="762132734995" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
