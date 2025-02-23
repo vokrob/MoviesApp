@@ -1,4 +1,4 @@
-package com.vokrob.moviesapp
+package com.vokrob.moviesapp.Activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
