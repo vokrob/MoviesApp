@@ -13,7 +13,7 @@ class MainRepository {
 
     fun loadUpcoming(): LiveData<MutableList<FilmItemModel>> {
         val listData = MutableLiveData<MutableList<FilmItemModel>>()
-        val ref = firebaseDatabase.getReference("Upcoming")
+        val ref = firebaseDatabase.getReference("Upcomming")
 
         ref.addValueEventListener(
             object : ValueEventListener {
