@@ -1,5 +1,6 @@
 package com.vokrob.moviesapp.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -54,7 +55,19 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContent { MainScreen(onItemClick = {}) }
+        setContent {
+            MainScreen(
+                onItemClick = { item ->
+                    val intent = Intent(
+                        this,
+                        DetailMovieActivity::class.java
+                    )
+
+                    intent.putExtra("object", item)
+                    startActivity(intent)
+                }
+            )
+        }
     }
 }
 
@@ -109,9 +122,9 @@ fun MainScreen(onItemClick: (FilmItemModel) -> Unit = {}) {
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.matchParentSize()
             )
-        }
 
-        MainContent(onItemClick)
+            MainContent(onItemClick)
+        }
     }
 }
 
